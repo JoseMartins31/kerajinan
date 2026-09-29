@@ -1,0 +1,54 @@
+table : kategori
+idKategori -> primary key
+nama_kategori -> varchar (50)
+deskripsi -> text
+
+table : user
+idUser -> primary key
+username -> varchar (100)
+password -> text
+role -> varchar (10)
+status -> varchar (30)
+
+table : produk
+idProduk -> primary key
+tanggal_upload -> datetime
+nama_produk -> varchar (255)
+deskripsi -> text
+Harga -> float
+foto -> varchar(255)
+status -> varchar(30)
+idKategori -> foreign key from kategori table on update cascade on delete set null
+idUser -> foreign key from user on update cascade on delete set null
+
+table : promosi
+idPromosi -> primary key
+idProduk  -> foreign key from produk
+tanggal_mulai -> date
+tanggal_akhir -> date
+diskon -> float
+status -> varchar (30)
+
+table : testimoni
+idTestimoni -> primary key
+idUser -> foreign key from user
+idProduk -> foreign key from produk
+rating -> float
+komentar -> text
+tanggal -> datetime
+
+table : pesanan
+idPesanan -> primary key
+idUser -> foreign key from User
+tanggal_pesanan -> dateitme
+alamat_pengiriman -> varchar (255)
+metode_pembayaran -> varchar (30)
+status_pesanan -> varchar (30)
+total_harga -> float
+
+table : detailpesanan
+idDetail -> primaryKey
+idPesanan -> foreign key from pesanan
+idProduk -> foreign key from Produk
+jumlah -> int
+sub_total -> float

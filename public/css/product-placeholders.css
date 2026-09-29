@@ -1,0 +1,96 @@
+/*
+|--------------------------------------------------------------------------
+| Product Image Placeholder Styles
+|--------------------------------------------------------------------------
+|
+| CSS for professional-looking placeholder images when no product image
+| is available. Creates attractive gradient placeholders with icons.
+|
+*/
+
+.product-placeholder {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-placeholder::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(45deg,
+            transparent,
+            transparent 10px,
+            rgba(255, 255, 255, 0.05) 10px,
+            rgba(255, 255, 255, 0.05) 20px);
+    animation: shimmer 3s linear infinite;
+}
+
+.product-placeholder .placeholder-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.product-placeholder .placeholder-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.product-placeholder .placeholder-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.product-placeholder.small .placeholder-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.product-placeholder.small .placeholder-text {
+    font-size: 0.7rem;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%) translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(100%) translateY(100%);
+    }
+}
+
+/* Category-based placeholder colors */
+.product-placeholder.category-electronics {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.product-placeholder.category-fashion {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.product-placeholder.category-home {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.product-placeholder.category-sports {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+.product-placeholder.category-books {
+    background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+}
+
+.product-placeholder.category-food {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
