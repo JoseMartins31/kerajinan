@@ -130,7 +130,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @forelse($promosi as $promo)
+                        @foreach ($promosi as $promo)
                             <tr>
                                 <td>
                                     <input type="checkbox" class="form-check-input promotion-checkbox"
@@ -239,20 +239,7 @@
                                     </div>
                                 </td>
                             </tr>
-                        @empty
-                            <tr>
-                                <td colspan="8" class="text-center py-4">
-                                    <div class="empty-state">
-                                        <i class="fas fa-percentage fa-3x text-muted mb-3"></i>
-                                        <h5 class="text-muted">Belum Ada Promosi</h5>
-                                        <p class="text-muted">Mulai dengan membuat promosi pertama Anda.</p>
-                                        <a href="{{ route('admin.promosi.create') }}" class="btn btn-primary">
-                                            <i class="fas fa-plus me-2"></i>Tambah Promosi
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                        @endforelse
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -335,6 +322,9 @@
             $('#promosiTable').DataTable({
                 responsive: true,
                 pageLength: 25,
+                language: {
+                    emptyTable: 'Belum Ada Promosi'
+                },
                 order: [
                     [4, 'desc']
                 ],

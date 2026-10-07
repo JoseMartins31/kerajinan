@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'Kerajinan Indonesia - Authentic Indonesian Handicrafts')</title>
+    <title>@yield('title', 'Kerajinan Tangan Daun Lontar - Kabupaten Malaka')</title>
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="@yield('description', 'Discover authentic Indonesian handicrafts including keramik, tekstil, kayu, and more. Premium quality handmade products from skilled artisans.')">
     <meta name="keywords" content="@yield('keywords', 'kerajinan, handicrafts, indonesia, keramik, tekstil, kayu, bambu, rotan')">
-    <meta property="og:title" content="@yield('og-title', 'Kerajinan Indonesia')">
+    <meta property="og:title" content="@yield('og-title', 'Kerajinan Tangan Daun Lontar')">
     <meta property="og:description" content="@yield('og-description', 'Authentic Indonesian Handicrafts')">
     <meta property="og:image" content="@yield('og-image', asset('images/logo-og.png'))">
     <meta property="og:url" content="{{ url()->current() }}">
@@ -390,7 +390,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">
-                <i class="fas fa-palette me-2"></i>Kerajinan Indonesia
+                <i class="fas fa-palette me-2"></i>Kerajinan Tangan Daun Lontar
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -557,7 +557,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <h5><i class="fas fa-palette me-2"></i>Kerajinan Indonesia</h5>
+                    <h5><i class="fas fa-palette me-2"></i>Kerajinan Tangan Daun Lontar</h5>
                     <p class="text-muted">Platform terpercaya untuk kerajinan tangan Indonesia berkualitas tinggi. Kami
                         menghubungkan pengrajin lokal dengan pecinta seni di seluruh dunia.</p>
                     <div class="social-icons">
@@ -592,7 +592,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <h5>Hubungi Kami</h5>
                     <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt me-2"></i>Jl. Kerajinan No. 123, Jakarta, Indonesia</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>Kabupaten Malaka, Nusa Tenggara Timur, Indonesia</p>
                         <p><i class="fas fa-phone me-2"></i>+62 21 1234 5678</p>
                         <p><i class="fas fa-envelope me-2"></i>info@kerajinanidonesia.com</p>
                     </div>
@@ -601,7 +601,7 @@
             <hr class="my-4">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="text-muted mb-0">&copy; 2026 Kerajinan Indonesia. All rights reserved.</p>
+                    <p class="text-muted mb-0">&copy; 2026 Kerajinan Tangan Daun Lontar. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <a href="#" class="text-muted me-3">Syarat & Ketentuan</a>
