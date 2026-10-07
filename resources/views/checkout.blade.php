@@ -1,6 +1,6 @@
 @extends('layouts.frontend')
 
-@section('title', 'Pembayaran - Kerajinan Indonesia')
+@section('title', 'Pembayaran - ')
 @section('description', 'Selesaikan pesanan Anda dengan transfer bank')
 
 @push('styles')
@@ -427,12 +427,12 @@
                                         <div class="col-md-6">
                                             <strong>Bank BCA</strong><br>
                                             <span>No. Rek: 1234567890</span><br>
-                                            <span>a/n PT Kerajinan Indonesia</span>
+                                            <span>a/n PT </span>
                                         </div>
                                         <div class="col-md-6">
                                             <strong>Bank Mandiri</strong><br>
                                             <span>No. Rek: 0987654321</span><br>
-                                            <span>a/n PT Kerajinan Indonesia</span>
+                                            <span>a/n PT </span>
                                         </div>
                                     </div>
                                     <hr>

@@ -1,10 +1,10 @@
 @extends('layouts.frontend')
 
-@section('title', 'Beranda - Kerajinan Indonesia')
+@section('title', 'Beranda - Kerajinan Tangan Daun Lontar Kabupaten MALAKA')
 @section('description',
-    'Temukan kerajinan tangan Indonesia terbaik dengan kualitas premium. Koleksi lengkap keramik,
-    tekstil, kayu, dan kerajinan tradisional lainnya.')
-@section('keywords', 'kerajinan indonesia, handicraft, keramik, tekstil, kayu, bambu, rotan, seni tradisional')
+    'Temukan kerajinan tangan Daun Lontar Kabupaten MALAKA terbaik. 
+    Daun Lontar tekstil, kerajinan tradisional lainnya.')
+@section('keywords', 'kerajinan Daun Lontar Kabupaten MALAKA, seni tradisional')
 
 @section('content')
     <!-- Hero Section -->
@@ -13,11 +13,11 @@
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
                     <h1 class="display-4 fw-bold mb-4">
-                        Temukan Kerajinan<br>
-                        <span style="color: var(--accent-color);">Indonesia Terbaik</span>
+                        Temukan kerajinan tangan daun lontar di<br>
+                        <span style="color: var(--accent-color);"> Kabupaten MALAKA</span>
                     </h1>
                     <p class="lead mb-4">
-                        Eksplorasi koleksi eksklusif kerajinan tangan Indonesia dari pengrajin terpilih.
+                        Eksplorasi koleksi eksklusif kerajinan tangan Di Kabupaten MALAKA dari pengrajin terpilih.
                         Setiap produk menceritakan warisan budaya yang kaya dan keahlian turun temurun.
                     </p>
                     <div class="d-flex gap-3 flex-wrap">
@@ -32,7 +32,7 @@
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="position-relative">
                         <div class="hero-image-container position-relative">
-                            <img src="/images/hero-craft.jpg" alt="Indonesian Handicrafts" class="img-fluid rounded-3"
+                            <img src="/images/liweb.jpg" alt="Indonesian Handicrafts" class="img-fluid rounded-3"
                                 style="box-shadow: 0 20px 40px rgba(0,0,0,0.2); width: 100%; height: 400px; object-fit: cover;"
                                 onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder-hero').style.display='flex';">
                             <div class="placeholder-hero d-none align-items-center justify-content-center bg-primary text-white rounded-3"

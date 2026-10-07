@@ -1,6 +1,6 @@
 @extends('layouts.frontend')
 
-@section('title', 'Shopping Cart - Kerajinan Indonesia')
+@section('title', 'Shopping Cart - Kerajinan Daun Lontar')
 @section('description', 'Review and manage your shopping cart items before checkout')
 
 @push('styles')

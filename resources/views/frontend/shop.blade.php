@@ -1,7 +1,7 @@
 @extends('layouts.frontend')
 
 @section('title', 'Belanja - ' . (request('search') ? 'Hasil Pencarian "' . request('search') . '"' : 'Semua Produk') .
-    ' - Kerajinan Indonesia')
+    ' - Kerajinan Tangan Daun Lontar')
 @section('description',
     'Belanja kerajinan tangan Indonesia terbaik dengan filter lengkap. Temukan produk keramik,
     tekstil, kayu, dan kerajinan tradisional lainnya.')

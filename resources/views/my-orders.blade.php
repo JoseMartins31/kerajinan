@@ -1,6 +1,6 @@
 @extends('layouts.frontend')
 
-@section('title', 'Pesanan Saya - Kerajinan Indonesia')
+@section('title', 'Pesanan Saya - Kerajinan Daun Lontar')
 @section('description', 'Lihat riwayat pesanan dan status pembayaran Anda')
 
 @push('styles')

@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title', 'Kerajinan Tangan Daun Lontar - Kabupaten Malaka')</title>
-
+    <title>@yield('title', 'Kerajinan Tangan Daun Lontar di Kabupaten MALAKA - Authentic MALAKA Handicrafts')</title>
     <!-- SEO Meta Tags -->
     <meta name="description" content="@yield('description', 'Discover authentic Indonesian handicrafts including keramik, tekstil, kayu, and more. Premium quality handmade products from skilled artisans.')">
     <meta name="keywords" content="@yield('keywords', 'kerajinan, handicrafts, indonesia, keramik, tekstil, kayu, bambu, rotan')">
@@ -390,7 +390,11 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">
+<<<<<<< Updated upstream
                 <i class="fas fa-palette me-2"></i>Kerajinan Tangan Daun Lontar
+=======
+                <i class="fas fa-palette me-2"></i>Kerajinan Daun Lontar
+>>>>>>> Stashed changes
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -557,8 +561,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
+<<<<<<< Updated upstream
+<div class="col-lg-4 col-md-6 mb-4">
                     <h5><i class="fas fa-palette me-2"></i>Kerajinan Tangan Daun Lontar</h5>
                     <p class="text-muted">Platform terpercaya untuk kerajinan tangan Indonesia berkualitas tinggi. Kami
+                        menghubungkan pengrajin lokal dengan pecinta seni di seluruh dunia.</p>
+                    <div class="social-icons"></div>
+>>>>>>> Stashed changes
                         menghubungkan pengrajin lokal dengan pecinta seni di seluruh dunia.</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
